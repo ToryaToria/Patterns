@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>слайдер_до_после</title>
+  <link rel="stylesheet" href="./slider.css">
+  <script src="./slider.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="slider">
+      <div class="slider__image-container">
+        <img class="slider__image-before slider__image" src="./img/ch-b.jpg" alt="до">
+        <img class="slider__image-after slider__image" src="./img/color.jpg" alt="после">
+      </div>
+      <input class="slider__range" type="range" min="0" max="100" value="50" aria-label="процентное соотношение к показанному до-после фото">
+<div class="slider__line"></div>
+<div class="slider__button" aria-hidden="true">
+  <svg width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 0L0 9L8 18V0Z" />
+    <path d="M24 9L16 0V18L24 9Z" />
+    </svg>
+
+</div>
+    </div>
+  </main>
+</body>
+
+</html>

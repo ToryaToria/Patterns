@@ -1,0 +1,52 @@
+.radio,
+
+ .checkbox {
+
+   appearance: none;
+
+   display: inline-block;
+
+   margin: 0;
+	 width: 16px;
+
+   height: 16px;
+
+border: 1px solid black;
+ }
+
+ .checkbox:checked {
+
+	background-image: url(./check.svg);
+  background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   vertical-align: baseline;
+}
+
+
+
+.radio:checked::before {
+
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: #2D3440;
+	border-radius: 2px;
+	margin: 5px;
+}
+
+.radio:hover,
+ .checkbox:hover {
+background-color: blue; }
+
+ .radio:active,
+ .checkbox:active {
+	background-color: violet; }
+
+ .radio:disabled,
+ .checkbox:disabled {
+   opacity: 0.4;
+ }
+
+ 

@@ -1,0 +1,107 @@
+
+body {
+  margin: 0 auto;
+
+  margin-top: 100px;
+  max-width: 1000px;
+  margin-left: 300px;
+}
+
+.email-label {
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+  width: fit-content;
+
+  outline:1px solid #747474;
+background-color: antiquewhite;}
+
+.email-label::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 35px;
+  height: 35px;
+
+  mask-image: url(./icon-email.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: rgb(174, 36, 233);
+}
+
+.email-input {
+  display: inline-block;
+  margin: 0;
+  padding: 4px;
+  padding-right: 40px;
+  font-size: 30px;
+  line-height: 1;
+  border: 3px solid #000000;
+  border-radius: 4px;
+}
+
+.email-input:hover {
+  border: 3px solid#0039a6;
+}
+
+.email-input:focus {
+  color: #3fe21a;
+  border: 3px solid#3fe21a;
+
+}
+
+.email-input:invalid {
+  border-color: #d52b1e;
+}
+
+.email-input:disabled {
+  border-color: #747474;
+}
+
+
+.email-label:has(.email-input:focus)::after {
+ background-color: #3fe21a
+  ;
+}
+
+.email-label:has(.email-input:hover)::after {
+  background-color: #0039a6;
+ }
+
+.email-label:has(.email-input:invalid)::after {
+  background-color: #d52b1e;
+}
+
+
+
+.email-label:has(.email-input:disabled)::after {
+  color: #747474;
+  background-color:  #747474;
+}
+
+
+.roditel {
+width: 100px;
+height: 100px;
+background-color: #3fe21a;
+}
+
+.rebzik {
+  width: 50px;
+height: 50px;
+background-color: #0a12e9;
+margin: 0 auto;
+}
+
+.rebzik:hover {
+  background-color: #d52b1e;
+}
+
+.roditel:has(.rebzik:hover) {
+  background-color: aquamarine;
+}

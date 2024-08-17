@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+форма для фильтров
+	<fieldset class="filter-group">
+		<legend class="filter-title">Инфраструктура</legend>
+		
+	<ul class="filter-list">
+		<li class="filter-item">
+			<label class="control">
+				<input class="control-input" type="checkbox" name="swimming-pool">
+				Бассейн
+			</label>
+		</li>
+	</ul>
+	</fieldset>
+	</form>
+
+	<div class="wrap-sort">
+		блок сортировки карточек товаров <br>
+		<select class="select-control" aria-label="Сортировка">
+			<option value="popular"> Сначала  дешёвые  </option>
+			<option value="cheap">Сначала дорогие</option>
+			<option value="expensive">Сначала популярные</option>
+		</select>
+		
+		<a href="#" class="button button-light">
+			<span class="visually-hidden">Показать список</span>
+		</a>
+		<a class="button" href="#">
+			<b class="visually-hidden">Показать карточки</b>
+		</a>
+	</div>
+
+
+	<ul class="pagination">
+		пагинация
+		<li class="pag-item">
+			<a class="pag-link pag-prev pag-disabled" href="">
+				<span class="visually-hidden">Предыдущая страница</span>
+			</a>
+		</li>
+	
+		<li class="pag-item">
+			<a class="pag-link pag-current" href="">
+				<span class="visually-hidden">1</span>
+			</a>
+		</li>
+	
+			<li class="pag-item">
+			<a class="pag-link pagination-next" href="">
+				<span class="visually-hidden">Следующая страница</span>
+			</a>
+		</li>
+	</ul>
+
+
+</body>
+</html>

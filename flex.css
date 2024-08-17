@@ -1,0 +1,38 @@
+.flex-contaimer {
+	width: 500px;
+	height: 200px;
+	outline: 3px solid red;
+margin-bottom: 25px;
+padding: 10px;
+
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center unsafe;
+
+}
+
+.flex-element {
+	width: 100px;
+	height: 100px;
+	outline: 3px solid green;
+
+	order: 1;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 100px;
+}
+
+.flex-contaimer-2 {
+	width: 500px;
+	outline: 3px solid gold;
+	padding: 10px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
