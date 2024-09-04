@@ -12,8 +12,8 @@ function show(index) {
   imgIndex = index;
 }
 
-controls.forEach((event) => {
-  event.addEventListener('click', () => {
+controls.forEach((e) => {
+  e.addEventListener('click', () => {
     if (event.target.classList.contains('controlls--prev')) {
       index = imgIndex - 1;
 
